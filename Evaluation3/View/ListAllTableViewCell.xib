@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="KGk-i7-Jjw" customClass="ListAllTableViewCell" customModule="Evaluation3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="632" height="285"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="632" height="285"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gED-q3-355">
+                        <rect key="frame" x="295" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hk0-cY-HU6">
+                        <rect key="frame" x="266" y="154" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="dnt-Pd-KDp"/>
+                            <constraint firstAttribute="height" constant="100" id="pXn-lx-295"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gED-q3-355" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0pn-EN-lFN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hk0-cY-HU6" secondAttribute="bottom" constant="20" id="8UT-7e-22K"/>
+                    <constraint firstItem="Hk0-cY-HU6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LmU-mM-wnL"/>
+                    <constraint firstItem="gED-q3-355" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="T83-7P-mgC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgCrypto" destination="Hk0-cY-HU6" id="XbB-8w-10v"/>
+                <outlet property="nameCrypto" destination="gED-q3-355" id="aLP-zT-uwR"/>
+            </connections>
+            <point key="canvasLocation" x="357.97101449275362" y="192.52232142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
